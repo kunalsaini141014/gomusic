@@ -1,0 +1,182 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dimen_5_dp"
+    android:paddingLeft="@dimen/dimen_5_dp"
+    android:paddingRight="@dimen/dimen_5_dp"
+    android:paddingTop="@dimen/dimen_5_dp"
+    tools:context="com.gomusic.app.activity.SongDetailActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/song_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card"
+            android:clickable="false" >
+
+            <ImageView
+                android:id="@+id/song_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:background="@color/color_action_bar_background"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_app_logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/song_image"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/song_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Song : Sochdi tan honi ae"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:id="@+id/song_artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Artist : Harman Gill"
+                    android:textColor="@color/color_action_bar_background"
+                    android:textSize="@dimen/medium_text"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/song_album"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Album : Abc"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/medium_text" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/play_details"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/song_details"
+            android:layout_marginTop="@dimen/dimen_5_dp"
+            android:background="@drawable/card"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Play"
+                android:textColor="@color/color_action_bar_background"
+                android:textSize="@dimen/large_text"
+                android:textStyle="bold" 
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/play_48_bit"
+                style="@style/Theme.GoMusic.CustomTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5_dp"
+                android:background="@drawable/card"
+                android:text="48 kbps(2.2 MB)"
+                android:textColor="@color/Black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/play_128_bit"
+                style="@style/Theme.GoMusic.CustomTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:text="128 kbps(2.2 MB)"
+                android:textColor="@color/Black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/play_320_bit"
+                style="@style/Theme.GoMusic.CustomTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:text="320 kbps(2.2 MB)"
+                android:textColor="@color/Black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/download_details"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/play_details"
+            android:layout_marginTop="@dimen/dimen_5_dp"
+            android:background="@drawable/card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_5_dp"
+                android:text="Download"
+                android:textColor="@color/color_action_bar_background"
+                android:textSize="@dimen/large_text"
+                android:textStyle="bold" 
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/download_48_bit"
+                style="@style/Theme.GoMusic.CustomTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5_dp"
+                android:background="@drawable/card"
+                android:text="48 kbps(2.2 MB)"
+                android:textColor="@color/Black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/download_128_bit"
+                style="@style/Theme.GoMusic.CustomTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:text="128 kbps(2.2 MB)"
+                android:textColor="@color/Black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/download_320_bit"
+                style="@style/Theme.GoMusic.CustomTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:text="320 kbps(2.2 MB)"
+                android:textColor="@color/Black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/dimen_progressbar_default_width"
+            android:layout_height="@dimen/dimen_progressbar_default_height"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dimen_20_dp"
+            android:background="@color/color_action_bar_background" />
+    </RelativeLayout>
+
+</ScrollView>

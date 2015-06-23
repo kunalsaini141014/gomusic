@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dimen_5_dp"
+    android:paddingLeft="@dimen/dimen_5_dp"
+    android:paddingRight="@dimen/dimen_5_dp"
+    android:paddingTop="@dimen/dimen_5_dp"
+    tools:context="com.gomusic.app.activity.AlbumDetailsActivity" >
+
+    <RelativeLayout
+        android:id="@+id/album_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card"
+        android:clickable="false" >
+
+        <ImageView
+            android:id="@+id/album_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@color/color_action_bar_background"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_app_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/album_image"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/album_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Song : Sochdi tan honi ae"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:id="@+id/album_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Artist : Harman Gill"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/medium_text" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/album_songs_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/album_details"
+        android:layout_centerHorizontal="true"
+        android:animateLayoutChanges="true"
+        android:divider="@color/WhiteSmoke"
+        android:dividerHeight="@dimen/dimen_5_dp"
+        android:layout_marginTop="@dimen/dimen_5_dp" >
+    </ListView>
+
+    <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimen_progressbar_default_width"
+        android:layout_height="@dimen/dimen_progressbar_default_height"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dimen_20_dp"
+        android:background="@color/color_action_bar_background" />
+
+</RelativeLayout>

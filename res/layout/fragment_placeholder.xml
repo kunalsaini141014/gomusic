@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteSmoke"
+    android:paddingBottom="@dimen/dimen_5_dp"
+    android:paddingLeft="@dimen/dimen_5_dp"
+    android:paddingRight="@dimen/dimen_5_dp"
+    android:paddingTop="@dimen/dimen_5_dp"
+    tools:context="com.gomusic.app.activty.HomeActivity$PlaceholderFragment" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_main_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/Songs_List_View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:divider="@color/WhiteSmoke"
+            android:dividerHeight="@dimen/dimen_5_dp"
+            android:fastScrollEnabled="true" >
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimen_progressbar_default_width"
+        android:layout_height="@dimen/dimen_progressbar_default_height"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dimen_20_dp"
+        android:background="@color/color_action_bar_background" />
+
+    <TextView
+        android:id="@+id/no_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/no_content"
+        android:gravity="center"
+        android:text="@string/no_music_found"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

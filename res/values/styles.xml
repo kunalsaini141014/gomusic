@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="Theme.GoMusic" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/color_action_bar_background</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/color_status_bar</item>
+
+        <!--
+         colorAccent is used as the default value for colorControlActivated,
+         which is used to tint widgets
+        -->
+        <item name="colorAccent">@color/AliceBlue</item>
+
+        <!--
+         You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight, and colorSwitchThumbNormal.
+        -->
+        <item name="searchViewStyle">@style/Theme.GoMusic.SearchView</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Source:- https://philio.me/styling-the-searchview-with-appcompat-v21/ -->
+    <style name="Theme.GoMusic.SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="searchIcon">@drawable/ic_ab_filter_icon</item>
+        <item name="closeIcon">@drawable/ic_clear_normal</item>
+        <item name="queryBackground">@drawable/textfield_default_holo_dark_white</item>
+    </style>
+
+    <style name="MenuDrawer" />
+
+    <style name="MenuDrawer.Widget" />
+
+    <style name="MenuDrawer.Widget.Category">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:background">@drawable/md__category_background</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MenuDrawer.Widget.Title">
+        <item name="android:background">@drawable/md__list_selector_holo_dark</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Theme.GoMusic.CustomTextView">
+        <item name="android:background">@drawable/card_view_selector_holo_dark</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+</resources>

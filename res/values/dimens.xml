@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--
+         Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html
+    -->
+    <dimen name="navigation_drawer_width">300dp</dimen>
+    <dimen name="medium_text">14sp</dimen>
+    <dimen name="large_text">18sp</dimen>
+    <dimen name="small_text">12sp</dimen>
+    <dimen name="dimen_0_dp">0dp</dimen>
+    <dimen name="dimen_5_dp">5dp</dimen>
+    <dimen name="dimen_1_dp">1dp</dimen>
+    <dimen name="dimen_10_dp">10dp</dimen>
+    <dimen name="dimen_15_dp">15dp</dimen>
+    <dimen name="dimen_20_dp">20dp</dimen>
+    <dimen name="dimen_30_dp">30dp</dimen>
+    <dimen name="dimen_50_dp">50dp</dimen>
+    <dimen name="dimen_60_dp">60dp</dimen>
+    <dimen name="dimen_progressbar_default_width">40dp</dimen>
+    <dimen name="dimen_progressbar_default_height">40dp</dimen>
+    <dimen name="index_bar_view_text_size">12sp</dimen>
+    <dimen name="index_bar_view_width">20dp</dimen>
+    <dimen name="index_bar_view_margin">10dp</dimen>
+
+</resources>

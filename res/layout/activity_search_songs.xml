@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dimen_5_dp"
+    tools:context="com.gomusic.app.activity.SearchSongsActivity" >
+
+    <LinearLayout
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_action_bar_background"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+        
+        <EditText
+            android:id="@+id/searchBarText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfield_default_holo_dark_white"
+            android:padding="@dimen/dimen_10_dp"
+            android:hint="Search"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/album_songs_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_5_dp"
+        android:layout_marginLeft="@dimen/dimen_5_dp"
+        android:layout_marginRight="@dimen/dimen_5_dp"
+        android:animateLayoutChanges="true"
+        android:divider="@color/WhiteSmoke"
+        android:dividerHeight="@dimen/dimen_5_dp"
+        android:fastScrollEnabled="true" >
+    </ListView>
+
+    <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimen_progressbar_default_width"
+        android:layout_height="@dimen/dimen_progressbar_default_height"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dimen_20_dp"
+        android:background="@color/color_action_bar_background" />
+
+</RelativeLayout>
